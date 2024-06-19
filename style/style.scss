@@ -16,7 +16,7 @@ body {
   margin: 0;
   background-color: #f4f2ea;
   line-height: 20px;
-  height: 4900px;
+  height: 4800px;
   font-family: Helvetica, sans-serif;
   // scroll-behavior: smooth;
   // overflow-y: scroll;
@@ -241,6 +241,7 @@ body {
 
   &_t {
     &-st {
+      font-family: 'aw-conqueror-didot', serif;
       position: relative;
       left: 40px;
       top: 850px;
@@ -275,31 +276,59 @@ body {
     }
   }
 
-  &image-1 {
-    max-width: 100%;
-    float: left;
-    margin-left: 50px;
+  &_image-1 {
+    transition: transform 0.3s ease;
+  }
+  &_image-1:hover {
+    transform: scale(1.05);
   }
 
-  &image-2 {
-    max-width: 100%;
-    float: right;
-    margin-left: 50px;
+  &_image-2 {
+    transition: transform 0.3s ease;
+  }
+
+  &_image-2:hover {
+    transform: scale(1.05);
+    // max-width: 100%;
+    // float: right;
+    // margin-left: 50px;
   }
 }
 
 .book {
   &_img {
     position: relative;
-    max-width: 70%;
+    max-width: 68%;
     margin-inline: auto;
+    margin-left: 170px;
     margin-block: 170px;
+    box-shadow: 8px 8px 8px rgb(150, 133, 133);
+    transition: transform 0.3s ease;
+
     // border: 2px solid #251010;
     // border-radius: 9px;
     // border-width: 8px;
   }
+  &_img:hover {
+    transform: scale(1.05);
+  }
+
+  &_ko1 {
+    position: relative;
+    left: 1400px;
+    bottom: 250px;
+    font-weight: 600;
+    margin-inline: auto;
+  }
+
+  &_ko {
+    position: relative;
+    left: 1400px;
+    bottom: 240px;
+  }
 
   &_t {
+    font-family: 'aw-conqueror-didot', serif;
     color: #251010;
     font-size: 135px;
     position: relative;
@@ -315,9 +344,10 @@ body {
   color: #f4f2ea;
   font-weight: 400;
   &_t {
+    font-family: 'aw-conqueror-didot', serif;
     font-size: 135px;
     position: relative;
-    top: 690px;
+    top: 700px;
     font-weight: 500;
     line-height: 40px;
   }
@@ -336,24 +366,26 @@ body {
   }
   &_img_3d1 {
     max-width: 100%;
-
-    // position: relative;
-    // float: right;
-    // right: 200px;
-    // top: 80px;
+    transition: transform 0.3s ease;
   }
+  &_img_3d1:hover {
+    transform: scale(1.05);
+  }
+
   &_img_3d2 {
     max-width: 100%;
-    // position: relative;
-    // float: right;
-    // top: 530px;
+    transition: transform 0.3s ease;
   }
+  &_img_3d2:hover {
+    transform: scale(1.05);
+  }
+
   &_img_3d3 {
     max-width: 100%;
-    // position: relative;
-    // float: right;
-    // top: 590px;
-    // right: 200px;
+    transition: transform 0.3s ease;
+  }
+  &_img_3d3:hover {
+    transform: scale(1.05);
   }
   // &_img_3d4 {
   //   max-width: 100%;
@@ -370,5 +402,23 @@ body {
     &-1 {
       margin-top: 15px;
     }
+  }
+}
+
+.final {
+  text-align: center;
+  margin-inline: auto;
+  padding-block: 160px;
+
+  &_th {
+    font-size: 40px;
+    font-family: 'aw-conqueror-didot', serif;
+    font-weight: 600;
+    color: #251010;
+  }
+
+  &_m {
+    font-size: 16px;
+    padding-block: 20px;
   }
 }
